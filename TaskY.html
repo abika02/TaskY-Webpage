@@ -22,23 +22,40 @@
 
     <!-- Modal -->
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
+    <body onload="loadExistingCards()">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Let's Begin!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="imageURL" class="form-label">Image URL</label>
+            <input type="url" class="form-control" id="imageURL" placeholder="https://xyz.png"/>
+          </div>
+          <div class="mb-3">
+            <label for="taskTitle" class="form-label">Task Title</label>
+            <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title"/>
+          </div>
+          <div class="mb-3">
+            <label for="taskType" class="form-label">Task Type</label>
+            <input type="text" class="form-control" id="taskType" placeholder="Enter task type"/>
+          </div>
+          <div class="mb-3">
+            <label for="taskDescription" class="form-label">Task Description</label>
+            <textarea type="text" class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="addNewCard()" data-bs-dismiss="modal">Save changes</button>
+        </div>
+      </div>
     </div>
+  </div>
+
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -89,15 +106,15 @@
             <div class="col-sm-12 col-md-6 col-md-4">
                 <div class="card">
                     <div class="card-header d-flex justify-content-end gap-2">
-                        <button type="button" class="btn btn-success"><i class="fa-solid fa-pencil"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash" aria-hidden="true"></i></button>
                     </div>
                     <div class="card-body">
                         <img src="https://i.pinimg.com/736x/b7/01/4e/b7014e66b9f946401d43b3b7bc1ce1b7.jpg"
                             class="card-img-top" alt="...">
-                        <h5 class="card-title mt-3 fw-bold text-primary ">Title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title mt-4 fw-bolder text-primary ">Title</h5>
+                        <p class="text-primary fs-5 fst-italic ">Tasky: Organize Life's Flow <i class="fa-solid fa-wand-sparkles"></i></p>
+                        <a href="#" class="btn btn-primary">Open Task</a>
                     </div>
                 </div>
 
