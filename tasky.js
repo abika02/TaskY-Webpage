@@ -1,12 +1,12 @@
 const taskContainer = document.querySelector(".task__container")
 console.log(taskContainer);
 const saveChanges = () => {
-  const taskData = {
-      id: `${Date.now()}`,
-      imageUrl: document.getElementById("imageurl").value,
-      taskTitle: document.getElementById("tasktitle").value,
-      taskType: document.getElementById("tasktype").value,
-      taskDescription: document.getElementById("taskdescription").value
+    const taskData = {
+        id: `${Date.now()}`,
+        imageUrl: document.getElementById("imageurl").value,
+        taskTitle: document.getElementById("tasktitle").value,
+        taskType: document.getElementById("tasktype").value,
+        taskDescription: document.getElementById("taskdescription").value
     };
 
 
@@ -31,5 +31,5 @@ const saveChanges = () => {
 
     </div>
     `;
-  taskContainer.insertAdjacentHTML("beforeend", newCard);
-  };
+    taskContainer.insertAdjacentHTML("beforeend", newCard);
+};
