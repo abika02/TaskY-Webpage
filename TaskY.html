@@ -61,7 +61,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
+          <button type="button" class="btn btn-primary" onclick="saveChanges()" data-bs-dismiss="modal" >Save changes</button>
         </div>
       </div>
     </div>
@@ -116,9 +116,15 @@
                 </div>
 
             </div>
+
+             <!-- Creating rows and columns for cards -->
+
             <div class="row task__container">
-                <div class="col-sm-12 col-md-6 col-md-4">
-                    <div class="card">
+              
+              <!-- default card
+              <div class="col-sm-12 col-md-6 col-md-4">
+
+                    <div class="card h-100 d-flex flex-column" style="width: 20rem;">
                         <div class="card-header d-flex justify-content-end gap-2">
                             <button type="button" class="btn btn-outline-success"><i
                                     class="fa-solid fa-pencil"></i></button>
@@ -127,7 +133,7 @@
                         </div>
                         <div class="card-body">
                             <img src="https://i.pinimg.com/736x/b7/01/4e/b7014e66b9f946401d43b3b7bc1ce1b7.jpg"
-                                class="card-img-top" alt="...">
+                                class="card-img-top" alt="..." style="height: 200px;">
                             <h5 class="card-title mt-4 fw-bolder text-primary ">Title</h5>
                             <p class="card-text fs-5 fst-italic ">Tasky: Organize Life's Flow <i
                                     class="fa-solid fa-wand-sparkles"></i></p>
@@ -135,7 +141,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div>-->
             </div>
         </div>
 

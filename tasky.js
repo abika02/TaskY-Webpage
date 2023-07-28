@@ -13,7 +13,8 @@ const saveChanges = () => {
     const newCard = `
 
     <div class="col-sm-12 col-md-6 col-md-4" id=${taskData.id}>
-        <div class="card">
+
+        <div class="card h-100 d-flex flex-column" style="width: 20rem;">
             <div class="card-header d-flex justify-content-end gap-2">
                 <button type="button" class="btn btn-outline-success"><i
                         class="fa-solid fa-pencil"></i></button>
@@ -21,7 +22,7 @@ const saveChanges = () => {
                         aria-hidden="true"></i></button>
             </div>
             <div class="card-body">
-                <img class="card-img-top" src=${taskData.imageUrl} alt="imgurl">
+                <img class="card-img-top" src=${taskData.imageUrl} alt="imgurl" style="height: 200px;">
                 <h5 class="card-title mt-4 fw-bolder text-primary ">${taskData.taskTitle}</h5>
                 <p class="card-text fs-5 fst-italic ">${taskData.taskDescription}</p>
                 <a href="#" class="btn btn-primary">${taskData.taskType}</a>
