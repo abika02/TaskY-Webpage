@@ -17,7 +17,7 @@
 <br>
 
 <h3>✨ Features:</h3>
-  <i>🌸 Full functionality for adding, deleting, and editing task cards.</i>
+  <i>🌸 Full functionality for adding, deleting, and editing task cards.</i><br>
   <i>🌸 High customizability ensures a tailored user experience.</i>
 
 <br>
