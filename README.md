@@ -33,6 +33,7 @@
   <i>🌸 Ensures seamless user experience across various devices with a responsive design.</i>
 
 <br>
+<br>
 
 <h3>🌐 Frontend and Backend:</h3>
   <i>🌸 Implements both frontend and backend components for a complete system.</i>
